@@ -1,0 +1,101 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+- Dark Blue (main background): hsl(218, 28%, 13%)
+- Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials background): hsl(219, 30%, 18%)
+
+### Accent
+
+- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 14px
+
+### Headings, Call-to-actions, Header Navigation
+
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+*/
+
+body{
+  background-color:#3E4551;
+  display:flex;
+  flex-direction:column;
+  color:white;
+}
+.container{
+  display:flex;
+  flex-direction:column;
+  height:100vh;
+  padding:0 10%;
+  text-align:center;
+}
+#menu{
+  display:flex;
+  flex-direction:row;
+  height:40px;
+}
+#logo{
+  list-style:none;
+  text-decoration:none;
+  margin-right:auto;
+}
+#logoIMG{
+  height:100%;
+}
+.items{
+  list-style:none;
+  text-decoration:none;
+  display:flex;
+  padding:10px 15px;
+  padding-top:10px;
+}
+#intro{
+  height:45%;
+}
+p{
+  font-size:20px;
+}
+button{
+  border-style:none;
+  background-color:#339ECC;
+  height:10%;
+  width:80%;
+  margin: 5% auto;
+  border-radius:30px;
+  color:white;
+}
