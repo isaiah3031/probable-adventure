@@ -5,6 +5,7 @@ body{
   flex-direction:column;
   padding:20px 5px;
   font-family:'Open-Sans', sans-serif;
+  min-width:300px
 }
 h1{
   font-size:30px;
@@ -29,6 +30,9 @@ p2{
 }
 .logoIMG{
   width:100px;
+}
+#menu{
+  height:20px;
 }
 #menuItems{
   float:right;
