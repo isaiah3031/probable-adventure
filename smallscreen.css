@@ -4,9 +4,17 @@ body{
   display:flex;
   flex-direction:column;
   padding:20px 5px;
+  font-family:'Open-Sans', sans-serif;
 }
 h1{
   font-size:30px;
+  font-family:Raleway, sans-serif;
+}
+p1{
+  font-size:16px;
+}
+p2{
+  font-size:14px;
 }
 .container{
   display:flex;
@@ -46,12 +54,7 @@ h1{
 .mainIMG{
   width:100%;
 }
-p1{
-  font-size:20px;
-}
-p2{
-  font-size:15px;
-}
+
 button{
   background-color:#339ECC;
 }
