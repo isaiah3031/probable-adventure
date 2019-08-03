@@ -19,17 +19,8 @@ p2{
 .container{
   display:flex;
   flex-direction:column;
-  padding:50px 15px;
+  padding:55px 15px;
   text-align:center;
-}
-.noMargin{
-  margin:0;
-}
-.menu{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  height:30px;
 }
 #logo{
   list-style:none;
@@ -39,24 +30,17 @@ p2{
 .logoIMG{
   width:100px;
 }
-#bottom{
+#menuItems{
   float:right;
 }
 .items{
   list-style:none;
   text-decoration:none;
   float:left;
-  padding:0 0 0 15px;
-}
-#intro{
-  height:45%;
+  padding-right:15px;
 }
 .mainIMG{
   width:100%;
-}
-
-button{
-  background-color:#339ECC;
 }
 .input{
   border-style:none;
@@ -64,6 +48,13 @@ button{
   width:80%;
   margin: 5% auto;
   border-radius:30px;
+  font-size:18px;
+  text-align:center;
+}
+button{
+  font-style: bold;
+  font-size: 18px;
+  background-color:#339ECC;
   color:white;
 }
 .centerIcon{
@@ -72,11 +63,9 @@ button{
 }
 .qouteCard{
   padding:20px 30px;
-  margin:20px 10px;
   background-color:#3D4657;
 }
 .profileInfo{
-  
   margin:20px 0;
 }
 .profilePic{
@@ -84,11 +73,14 @@ button{
   height:50px;
   border-radius:100px;
   margin-right:15px;
- 
 }
 .noMarPad{
   margin:0;
   padding-bottom:10px;
+}
+#form{
+  text-align:center;
+  color:black;
 }
 .bottomLogo{
   width:200px;
