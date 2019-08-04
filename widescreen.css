@@ -17,22 +17,22 @@ p1{
 p2{
   font-size:14px;
 }
-.introSect, .serviceSect, .productivitySect, contactSect{
+.container{
   display:flex;
   flex-direction:column;
-  margin:55px 15px;
+  padding:55px 15px;
   text-align:center;
-}
-#logo{
-  list-style:none;
-  text-decoration:none;
-  margin-right:auto;
+  width:30%;
 }
 .logoIMG{
   width:100px;
 }
 #menu{
   height:20px;
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  height:35px;
 }
 #menuItems{
   float:right;
@@ -41,15 +41,22 @@ p2{
   list-style:none;
   text-decoration:none;
   float:left;
-  padding-right:15px;
+  padding-right:50px;
 }
 .mainIMG{
   width:100%;
+  margin:0 auto%;
+}
+.introSect{
+  width:50%;
+  margin:0 auto;
+  text-align:center;
+  background:src(images/bg-curvy-desktop.svg);
 }
 .input{
   border-style:none;
   height:60px;
-  width:80%;
+  width:40%;
   margin: 5% auto;
   border-radius:30px;
   font-size:18px;
@@ -61,14 +68,45 @@ button{
   background-color:#339ECC;
   color:white;
 }
+.productivitySect{
+  width:90%;
+  display:flex;
+  flex-direction:row;
+  margin:5% auto;
+}
+#textColumn{
+  width:100%;
+  margin:5%;
+}
+#productivityTitle{
+  width:55%;
+}
+.serviceSect{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+}
+.service{
+  width:30%;
+  padding:5% 10%;
+  display:flex;
+  justify-content:flex-end;
+}
 .centerIcon{
   width:100px;
   margin:0 auto;
 }
+.qouteSect{
+  width:90%;
+  margin:0 auto;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
 .qouteCard{
-  padding:20px 30px;
+  width:25%;
+  padding:5% 25px;
   background-color:#3D4657;
-  margin:5% 0;
 }
 .profileInfo{
   margin:20px 0;
@@ -79,31 +117,48 @@ button{
   border-radius:100px;
   margin-right:15px;
 }
+.accessSect{
+  margin:10% auto;
+  padding:0 5%;
+  display:flex;
+  flex-wrap:wrap;
+  width:50%;
+  background-color:#3D4657;
+}
 .noMarPad{
   margin:0;
   padding-bottom:10px;
 }
-.accessSect{
-  display:flex;
-  flex-direction:column;
-}
 #form{
+  width:40%;
   text-align:center;
   color:black;
 }
 .bottomLogo{
   width:200px;
-  margin-left:20px;
+  margin-left:8%;
 }
 .contactText{
   margin:50px 50px 0;
   width:90%;
+}
+.contactSect{
+  margin-top:50px;
+  display:flex;
+}
+.bottomMenus{
+  height:50%;
+  width:50%;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
 }
 .icons{
   float:left;
 }
 .map{
   list-style-image:url(images/icon-location.svg);
+  width:25%;
 }
 .phone{
   list-style-image:url(images/icon-phone.svg);
@@ -114,4 +169,12 @@ button{
 .bottomNav{
   margin:20px 10px;
   list-style:none;
+  width:8%;
+}
+#iconContainer{
+  width:20%;
+  height:50px;
+  margin-top:20px;
+  display:flex;
+  justify-content:space-around;
 }
