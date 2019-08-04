@@ -1,11 +1,13 @@
 body{
-  background-color:#3E4551;
   color:white;
   display:flex;
   flex-direction:column;
   padding:20px 5px;
   font-family:'Open-Sans', sans-serif;
-  min-width:300px
+  min-width:300px;
+  margin:0;
+  background-color:#181F2A;
+  overflow-x:hidden;
 }
 h1{
   font-size:30px;
@@ -33,6 +35,9 @@ p2{
   justify-content:space-between;
   width:100%;
   height:35px;
+  margin:0;
+  padding-top:50px;
+  background-color:#1C2431;
 }
 #menuItems{
   float:right;
@@ -49,42 +54,35 @@ p2{
 }
 .introSect{
   width:50%;
-  margin:0 auto;
+  margin:0;
   text-align:center;
-  background:src(images/bg-curvy-desktop.svg);
+  background-color:#1C2431;
+  padding:0 25%;
+  background-image:url(images/bg-curvy-desktop.svg);
+  background-repeat:no-repeat;
+  background-position:0 51vh;
+  
 }
 .input{
   border-style:none;
   height:60px;
-  width:40%;
   margin: 5% auto;
   border-radius:30px;
   font-size:18px;
   text-align:center;
 }
 button{
+  width:35%;
   font-style: bold;
   font-size: 18px;
-  background-color:#339ECC;
   color:white;
-}
-.productivitySect{
-  width:90%;
-  display:flex;
-  flex-direction:row;
-  margin:5% auto;
-}
-#textColumn{
-  width:100%;
-  margin:5%;
-}
-#productivityTitle{
-  width:55%;
+  background-image: linear-gradient(to right, #81D9D4, 	#339ECC);
 }
 .serviceSect{
   width:100%;
   display:flex;
   flex-wrap:wrap;
+  margin:0;
 }
 .service{
   width:30%;
@@ -96,16 +94,29 @@ button{
   width:100px;
   margin:0 auto;
 }
-.qouteSect{
+.productivitySect{
   width:90%;
-  margin:0 auto;
+  display:flex;
+  flex-direction:row;
+  padding:5% 5%;
+}
+#textColumn{
+  width:100%;
+  margin:5%;
+}
+#productivityTitle{
+  width:60%;
+}
+.qouteSect{
+  width:80%;
   display:flex;
   flex-direction:row;
   justify-content:space-between;
+  padding:10%;
 }
 .qouteCard{
   width:25%;
-  padding:5% 25px;
+  padding:2% 25px;
   background-color:#3D4657;
 }
 .profileInfo{
@@ -123,20 +134,22 @@ button{
   display:flex;
   flex-wrap:wrap;
   width:50%;
-  background-color:#3D4657;
+  background-color:#1C2431;
 }
 .noMarPad{
   margin:0;
   padding-bottom:10px;
 }
 #form{
-  width:40%;
+  width:60%;
+  margin-right:10px;
   text-align:center;
   color:black;
 }
 .bottomLogo{
   width:200px;
-  margin-left:8%;
+  height:50px;
+  padding:0 80% 5% 8%;
 }
 .contactText{
   margin:50px 50px 0;
@@ -145,6 +158,9 @@ button{
 .contactSect{
   margin-top:50px;
   display:flex;
+  background-color:#1C2431;
+  padding:10vw 0;
+  flex-wrap:wrap;
 }
 .bottomMenus{
   height:50%;
