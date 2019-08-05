@@ -55,7 +55,7 @@ body{
   padding:0 25%;
   background-image:url(images/bg-curvy-desktop.svg);
   background-repeat:no-repeat;
-  background-position:0 51vh;
+  background-position:0 60vh;
 }
 #bgImage{
   display:flex;
@@ -104,7 +104,7 @@ button{
 #productivityTitle{
   width:60%;
 }
-.qouteSect{
+.quoteSect{
   width:80%;
   display:flex;
   flex-direction:row;
@@ -112,7 +112,15 @@ button{
   padding:10%;
   padding-bottom:5%;
 }
-.qouteCard{
+#quoteImg{
+  height:30px;
+  width:30px;
+  position:relative;
+  top:-50px;
+  left:-25px;
+  z-index:1;j
+}
+.quoteCard{
   width:25%;
   padding:2% 25px;
   background-color:#3D4657;
