@@ -55,7 +55,7 @@ body{
   padding:0 25%;
   background-image:url(images/bg-curvy-desktop.svg);
   background-repeat:no-repeat;
-  background-position:0 70vh;
+  background-position:0 50vh;
 }
 #bgImage{
   display:flex;
