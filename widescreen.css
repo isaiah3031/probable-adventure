@@ -1,19 +1,85 @@
-h1{
-  font-size:30px;
-  font-family:Raleway, sans-serif;
+/*
+  Table of Contents
+  
+    1. Global Styles
+    2. Typography
+    3. Layout
+    4. Components
+      4.1 Buttons
+      4.2 Forms
+      4.3 Image
+      4.4 Navigation
+*/
+
+/*  Global Styles */
+
+.noMarPad{
+  margin:0;
+  padding-bottom:10px;
 }
-p1{
-  font-size:16px;
-}
-p2{
-  font-size:14px;
-}
+
 .container{
   display:flex;
   flex-direction:column;
   padding:55px 15px;
   text-align:center;
 }
+
+.service{
+  width:30%;
+  padding:5% 10%;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.centerIcon{
+  width:100px;
+  margin:0 auto;
+}
+
+.quoteCard{
+  margin-right:25px;
+  padding:2% 25px;
+  background-color:#3D4657;
+}
+
+.profileInfo{
+  margin:20px 0;
+}
+
+.profilePic{
+  float:left;
+  height:50px;
+  border-radius:100px;
+  margin-right:15px;
+}
+
+.input{
+  border-style:none;
+  height:60px;
+  margin: 5% auto;
+  border-radius:30px;
+  font-size:18px;
+  text-align:center;
+}
+
+/*  Typography */
+
+h1{
+  font-size:30px;
+  font-family:Raleway, sans-serif;
+}
+
+p1{
+  font-size:16px;
+}
+
+p2{
+  font-size:14px;
+}
+
+/*  Layout */
+
 body{
   color:white;
   display:flex;
@@ -24,30 +90,7 @@ body{
   background-color:hsl(218, 28%, 13%);
   overflow-x:hidden;
 }
-.logoIMG{
-  width:100px;
-}
-#menu{
-  display:flex;
-  justify-content:space-between;
-  height:30px;
-  margin:0;
-  padding:25px 50px 0 50px;
-  background-color:hsl(217, 28%, 15%);
-}
-#menuItems{
-  float:right;
-}
-.items{
-  list-style:none;
-  text-decoration:none;
-  float:left;
-  padding-right:50px;
-}
-.mainIMG{
-  width:100%;
-  margin:0 auto;
-}
+
 .introSect{
   margin:0;
   text-align:center;
@@ -57,83 +100,38 @@ body{
   background-repeat:no-repeat;
   background-position:0 50vh;
 }
-#bgImage{
-  display:flex;
-  flex-direction:column;
-}
-.input{
-  border-style:none;
-  height:60px;
-  margin: 5% auto;
-  border-radius:30px;
-  font-size:18px;
-  text-align:center;
-}
-button{
-  width:35%;
-  font-size: 18px;
-  color:white;
-  background-image: linear-gradient(to right, #81D9D4, 	#339ECC);
-}
+
 .serviceSect{
   width:100%;
   display:flex;
   flex-wrap:wrap;
   margin:0;
 }
-.service{
-  width:30%;
-  padding:5% 10%;
-  display:flex;
-  justify-content:flex-end;
-}
-.centerIcon{
-  width:100px;
-  margin:0 auto;
-}
+
 .productivitySect{
   width:90%;
   display:flex;
   flex-direction:row;
-  padding:5% 5%;
+  text-align:left;
 }
+
+#productivityTitle{
+  width:60%;
+}
+
 #textColumn{
   width:100%;
   margin:5%;
 }
-#productivityTitle{
-  width:60%;
-}
-.quoteSect{
+
+.testimonialSect{
   width:80%;
   display:flex;
   flex-direction:row;
-  justify-content:space-between;
   padding:10%;
   padding-bottom:5%;
 }
-#quoteImg{
-  height:30px;
-  width:30px;
-  position:relative;
-  top:-50px;
-  left:-25px;
-  z-index:1;j
-}
-.quoteCard{
-  width:25%;
-  padding:2% 25px;
-  background-color:#3D4657;
-}
-.profileInfo{
-  margin:20px 0;
-}
-.profilePic{
-  float:left;
-  height:50px;
-  border-radius:100px;
-  margin-right:15px;
-}
+
 .accessSect{
   position: relative;
   top:150px;
@@ -144,42 +142,80 @@ button{
   width:50%;
   background-color:#1C2431;
 }
-.noMarPad{
-  margin:0;
-  padding-bottom:10px;
+
+.contactSect{
+  margin:50px 0 0;
+  display:flex;
+  background-color: hsl(216, 53%, 9%);
+  padding:15% 0 5%;
+  flex-wrap:wrap;
 }
+
+.contactText{
+  margin:50px 50px 0;
+  width:90%;
+}
+
+#iconContainer{
+  width:20%;
+  height:50px;
+  margin-top:20px;
+  display:flex;
+  justify-content:space-around;
+}
+/*  Components */
+
+/* 4.1 Buttons */
+
+button{
+  width:35%;
+  font-size: 18px;
+  color:white;
+  background-image: linear-gradient(to right, #81D9D4, 	#339ECC);
+}
+
+/* 4.2 Forms */
 #form{
   width:60%;
   margin-right:10px;
   text-align:center;
   color:black;
 }
-.contactSect{
-  margin-top:50px;
-  display:flex;
-  background-color: hsl(216, 53%, 9%);
-  padding:15% 0;
-  flex-wrap:wrap;
+/* 4.3 Images */
+
+.logoIMG{
+  width:100px;
 }
+
+.mainIMG{
+  width:100%;
+  margin:0 auto;
+}
+
+#bgImage{
+  display:flex;
+  flex-direction:column;
+}
+
+#quoteImg{
+  height:30px;
+  width:30px;
+  position:relative;
+  top:-50px;
+  left:-25px;
+  z-index:1;j
+}
+
 .bottomLogo{
   width:200px;
   height:50px;
   padding:0 80% 5% 8%;
 }
-.contactText{
-  margin:50px 50px 0;
-  width:90%;
-}
-.bottomMenus{
-  height:50%;
-  width:50%;
-  display:flex;
-  flex-direction:row;
-  justify-content:space-around;
-}
+
 .icons{
   float:left;
 }
+
 .map{
   list-style-image:url(images/icon-location.svg);
   width:25%;
@@ -190,15 +226,37 @@ button{
 .email{
   list-style-image:url(images/icon-email.svg);
 }
+/* 4.4 Navigation */
 .bottomNav{
   margin:20px 10px;
   list-style:none;
   width:8%;
 }
-#iconContainer{
-  width:20%;
-  height:50px;
-  margin-top:20px;
+
+#menu{
   display:flex;
+  justify-content:space-between;
+  height:30px;
+  margin:0;
+  padding:25px 50px 0 50px;
+  background-color:hsl(217, 28%, 15%);
+}
+
+#menuItems{
+  float:right;
+}
+
+.items{
+  list-style:none;
+  text-decoration:none;
+  float:left;
+  padding-right:50px;
+}
+
+.bottomMenus{
+  height:50%;
+  width:50%;
+  display:flex;
+  flex-direction:row;
   justify-content:space-around;
 }
